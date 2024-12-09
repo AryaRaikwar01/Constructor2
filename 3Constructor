@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class striver
+{
+public:
+    string python;
+    string anaconda;
+
+    striver(string py, string an)
+    {
+        py = python;
+        an = anaconda;
+        cout << python + "Constructor invoked Babe!!" << endl;
+
+        this->python = py;
+        this->anaconda = an;
+
+    }
+    ~striver()
+    {
+        cout << python + "Destructor invoked Babe!!" << endl;
+    }
+
+    void display(){
+          
+          cout<<"Python induced code is : "<<python<<endl;
+          cout<<"anaconda induced code is : "<<anaconda<<endl;
+
+    }
+};
+
+int main()
+{
+    striver A1("Hello - ","Baby I am doing pretty cool");
+    A1.display();
+    return 0;
+}
